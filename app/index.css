@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --blue-500: #007bff; /* Define the blue color */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var (--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-container img {
+  height: 69px !important;
+  width: auto;
+}
+
+.rounded-bl-clip {
+  border-bottom-left-radius: 650px;
+  overflow: hidden;
+}
+
+.custom-clip {
+  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%);
+  overflow: hidden;
+}
+
+.custom-box-shape {
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  color: var(--blue-500);
+  border-radius: 0;
+  font-size: 20px; 
+  transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.icon-container:hover {
+  border-radius: 50%;
+  background-color: var(--blue-500);
+  color: white;
+}
+
+.icon-container-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.icon-container-custom:hover {
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 0.3s ease-in-out forwards;
+}
+
+.animate-slide-right {
+  animation: slide-right 0.3s ease-in-out forwards;
+}
