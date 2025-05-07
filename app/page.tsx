@@ -14,7 +14,7 @@ export default function Home() {
       <header className="container-fluid h-20 px-24 py-12 bg-gray-100 flex items-center shadow-md sticky top-0 z-50">
         <nav className="flex items-center flex-grow">
           <a href="/" className="logo-container flex items-center">
-            <Image src="/images/logo/logo-s.png" alt="Logo" width={100} height={69} />
+            <Image src="/images/logo/companyLogo.png" alt="Logo" width={600} height={80} />
           </a>
           <nav className="flex gap-6 flex-grow justify-center items-center">
             {/* Navigation Links */}
