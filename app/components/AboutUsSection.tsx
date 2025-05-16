@@ -4,13 +4,13 @@ import { aboutText1, aboutText2 } from "../constants/aboutTexts";
 export default function AboutUsSection() {
   return (
     <div className="flex items-center justify-center bg-gray-100">
-      <div className="relative w-1/3">
+      <div className="relative w-1/3 bg-white py-20 about-pic">
         <Image
           src="/images/banners/about-img1.jpg"
           alt="Person with Headphones"
           width={600}
           height={700}
-          className="w-full h-auto object-cover shadow-lg custom-clip"
+          className="w-full h-auto object-cover shadow-lg about-pic"
         />
       </div>
       <div className="text-left flex flex-col w-1/3 p-8">
