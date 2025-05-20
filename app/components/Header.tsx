@@ -10,7 +10,7 @@ export default function Header() {
           <nav className="flex gap-6 flex-grow justify-center items-center">
             {/* Navigation Links */}
             <div className="relative group">
-              <a href="#about" className="text-black hover:text-blue-500">
+              <a href="#about" className="text-black hover:text-blue-500 pb-3">
                 Giới thiệu
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-56">
@@ -31,7 +31,7 @@ export default function Header() {
               </div>
             </div>
             <div className="relative group">
-              <a href="#news" className="text-black hover:text-blue-500">
+              <a href="#news" className="text-black hover:text-blue-500 pb-3">
                 Tin tức
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-56">
@@ -46,49 +46,31 @@ export default function Header() {
               </div>
             </div>
             <div className="relative group">
-              <a href="#products" className="text-black hover:text-blue-500">
+              <a href="#products" className="text-black hover:text-blue-500 pb-3">
                 Sản phẩm
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-64">
                 <ul className="text-sm text-gray-700">
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#internal">Nội vụ</a>
+                    <a href="#internal">CRM (Hệ thống tương tác khách hàng đa kênh)</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#labor">Lao động & TBXH</a>
+                    <a href="#labor">Hệ thống ERP (Quản trị tổng thể nguồn lực doanh nghiệp</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#education">Giáo dục và Đào Tạo</a>
+                    <a href="#education">Phần mềm kế toán (TT88, TT133, TT200)</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#finance">Tài chính</a>
+                    <a href="#finance">Hệ thống HRM</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#inspection">Thanh tra</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#office">Văn phòng ủy ban nhân dân huyện</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#union">Tổng liên đoàn lao động/ Liên đoàn lao động tỉnh</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#museum">Bảo tàng</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#justice">Tư pháp</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#ethnic">Ban dân tộc</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#software">Phần mềm quản lý cơ sở dữ liệu thừa phát lại</a>
+                    <a href="#inspection">Hệ thống quản lý ký túc xá</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="relative group">
-              <a href="#services" className="text-black hover:text-blue-500">
+              <a href="#services" className="text-black hover:text-blue-500 pb-3">
                 Dịch vụ
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-64">

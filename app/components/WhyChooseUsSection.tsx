@@ -24,7 +24,6 @@ export default function WhyChooseUsSection() {
               className="absolute top-0 right-[-30px] w-20 h-20 bg-blue-500 flex items-center justify-center rounded-full overflow-hidden"
               style={{ clipPath: "inset(0 30% 0 0)" }}
             >
-              <div className="absolute top-1/2 right-[-10px] w-16 h-1 bg-green-500 transform -translate-y-1/2"></div>
             </div>
           </div>
         ))}

@@ -1,7 +1,8 @@
 export const aboutText1 = `
-  Công ty Diamond Việt Nam được thành lập vào năm 2017 bởi các kỹ sư công nghệ thông tin có kinh nghiệm. Diamond Việt Nam chuyên lĩnh vực sản xuất và phát triển phần mềm, dịch vụ và giải pháp dành cho các cơ quan nhà nước: Giáo dục, Y tế, Hành chính và Doanh nghiệp. Ngoài ra, công ty còn hoạt động trong lĩnh vực dịch vụ mạng và truyền thông cho các doanh nghiệp và nhà cung cấp dịch vụ, kinh doanh cung cấp thiết bị tin học, viễn thông. Công ty Diamond Việt Nam đã trải qua quá trình nỗ lực phấn đấu nâng cao chất lượng quản lý, chất lượng dịch vụ cũng như từng bước thiết lập quan hệ vững chắc và tin cậy với các đối tác trong và ngoài nước.
+  Công ty TNHH Giải pháp phần mềm Kim Cương (Viết tắt là DSS CO .,LTD) được thành lập ngày 25/03/2004 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp. DSS là doanh nghiệp hang đầu hoạt động trong lĩnh vực cung cấp dịch vụ gia công phần mềm cho thị trường Nhật Bản và trong nước.
 `;
 
 export const aboutText2 = `
-  Công ty là sự kết hợp tinh túy của các kỹ sư công nghệ thông tin hoạt động lâu năm trong công ty và các kỹ sư rất nhiều kinh nghiệm đã từng là team trưởng tham gia công việc ở các công ty phần mềm nổi tiếng ở Việt Nam.
+  Đội ngũ quản lý năng động, gần 20 năm kinh nghiệm trong lĩnh vực IT, phát triển phần mềm.
+  Đội ngũ kỹ sư trẻ, nhiệt huyết, có trình độ chuyên môn cao, được đào tạo bài bản tại các trường đại học danh tiếng trong nước và quốc tế.
 `;
