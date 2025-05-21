@@ -33,8 +33,8 @@ export default function Footer() {
                 <EnvironmentOutlined className="text-blue-500 text-xl" />
               </div>
               <div>
-                <p className="font-bold text-black">SN 36A, ngõ 203/62/7 phố Kim Ngưu</p>
-                <p className="text-sm text-gray-600">Quận Hai Bà Trưng, Thành phố Hà Nội</p>
+                <p className="font-bold text-black">407 nhà A, Hacinco, Nhân chính</p>
+                <p className="text-sm text-gray-600">Quận Thanh xuân, Thành phố Hà Nội</p>
               </div>
             </div>
           </div>

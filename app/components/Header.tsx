@@ -19,7 +19,7 @@ export default function Header() {
                     <a href="/ve-chung-toi">Về chúng tôi</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#structure">Cơ cấu - Tổ chức</a>
+                    <a href="/co-cau-co-quan-to-chuc">Cơ cấu - Tổ chức</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
                     <a href="#vision">Tầm nhìn - Chiến lược</a>
