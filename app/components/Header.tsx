@@ -66,6 +66,21 @@ export default function Header() {
                   <li className="px-4 py-2 hover:bg-gray-100">
                     <a href="#inspection">Hệ thống quản lý ký túc xá</a>
                   </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <a href="#internal">Hoá đơn điện tử</a>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <a href="#labor">Quản lý rủi ro hoá đơn mSMI</a>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <a href="/bao-gia">Báo giá</a>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <a href="#education">Bảo hiểm xã hội điện tử</a>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <a href="#finance">Hợp đồng điện tử</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -89,6 +104,9 @@ export default function Header() {
             </a>
             <a href="#contact" className="text-black hover:text-blue-500">
               Liên hệ
+            </a>
+            <a href="#register" className="text-black hover:text-blue-500">
+              Đăng ký sử dụng
             </a>
           </nav>
         </nav>

@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import FirstStart from "./components/FirstStart";
 import AboutUsSection from "./components/AboutUsSection";
 import FeaturedProductsSection from "./components/FeaturedProductsSection";
-import WhyChooseUsSection from "./components/WhyChooseUsSection";
+import CustomerReviews from "./components/CustomerReviews";
 import LatestNews from "./components/LatestNews";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         <FirstStart />
         <AboutUsSection />
         <FeaturedProductsSection />
-        <WhyChooseUsSection />
+        <CustomerReviews />
         <LatestNews />
       </main>
       <Footer />
