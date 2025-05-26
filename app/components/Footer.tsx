@@ -1,4 +1,5 @@
 import { PhoneOutlined, MailOutlined, EnvironmentOutlined, FacebookOutlined, LinkedinOutlined, PinterestOutlined, InstagramOutlined, SendOutlined } from "@ant-design/icons";
+import ChatWidget from "../floatingbtn/ChatWidget";
 
 export default function Footer() {
   return (
@@ -110,6 +111,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      <ChatWidget />
       </footer>
   );
 }

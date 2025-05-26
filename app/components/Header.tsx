@@ -105,7 +105,7 @@ export default function Header() {
             <a href="#contact" className="text-black hover:text-blue-500">
               Liên hệ
             </a>
-            <a href="#register" className="text-black hover:text-blue-500">
+            <a href="/dang-ky-su-dung" className="text-black hover:text-blue-500">
               Đăng ký sử dụng
             </a>
           </nav>
