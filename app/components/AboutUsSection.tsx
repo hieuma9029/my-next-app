@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { aboutText1, aboutText2 } from "../constants/aboutTexts";
+import { aboutText1, aboutText2 } from "../constants/Texts";
 
 export default function AboutUsSection() {
   return (

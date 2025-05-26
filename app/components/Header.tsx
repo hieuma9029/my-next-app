@@ -22,10 +22,10 @@ export default function Header() {
                     <a href="/co-cau-co-quan-to-chuc">Cơ cấu - Tổ chức</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#vision">Tầm nhìn - Chiến lược</a>
+                    <a href="/tam-nhin-chien-luoc">Tầm nhìn - Chiến lược</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#strengths">Thế mạnh và sự khác biệt</a>
+                    <a href="/the-manh-va-su-khac-biet">Thế mạnh và sự khác biệt</a>
                   </li>
                 </ul>
               </div>
@@ -70,13 +70,7 @@ export default function Header() {
                     <a href="#internal">Hoá đơn điện tử</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#labor">Quản lý rủi ro hoá đơn mSMI</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
                     <a href="/bao-gia">Báo giá</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="#education">Bảo hiểm xã hội điện tử</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
                     <a href="#finance">Hợp đồng điện tử</a>

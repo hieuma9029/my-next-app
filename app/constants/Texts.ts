@@ -6,3 +6,7 @@ export const aboutText2 = `
   Đội ngũ quản lý năng động, gần 20 năm kinh nghiệm trong lĩnh vực IT, phát triển phần mềm.
   Đội ngũ kỹ sư trẻ, nhiệt huyết, có trình độ chuyên môn cao, được đào tạo bài bản tại các trường đại học danh tiếng trong nước và quốc tế.
 `;
+
+export const strategicVision1 = `
+  Tiếp cận, nắm bắt công nghệ tiên tiến, kết hợp với thực tế của Việt Nam, để làm ra sản phẩm hữu ích, hiệu quả, thân thiện nhằm: Giải phóng nguồn lực lao động của xã hội và gia tăng hiệu quả kinh doanh cho doanh nghiệp.
+`;
