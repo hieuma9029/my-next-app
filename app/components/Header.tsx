@@ -15,18 +15,26 @@ export default function Header() {
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-56">
                 <ul className="text-sm text-gray-700">
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="/ve-chung-toi">Về chúng tôi</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="/co-cau-co-quan-to-chuc">Cơ cấu - Tổ chức</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="/tam-nhin-chien-luoc">Tầm nhìn - Chiến lược</a>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <a href="/the-manh-va-su-khac-biet">Thế mạnh và sự khác biệt</a>
-                  </li>
+                  <a href="/ve-chung-toi">
+                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                      Về chúng tôi
+                    </li>
+                  </a>
+                  <a href="/co-cau-co-quan-to-chuc">
+                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                      Cơ cấu - Tổ chức
+                    </li>
+                  </a>
+                  <a href="/tam-nhin-chien-luoc">
+                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                      Tầm nhìn - Chiến lược
+                    </li>
+                  </a>
+                  <a href="/the-manh-va-su-khac-biet">
+                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                      Thế mạnh và sự khác biệt
+                    </li>
+                  </a>
                 </ul>
               </div>
             </div>
