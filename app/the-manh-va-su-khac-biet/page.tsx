@@ -7,20 +7,22 @@ export default function AboutUsPage() {
     <div className="min-h-screen flex flex-col relative">
       <Header />
       <main
-        className="flex items-center text-black justify-center bg-gray-100 pt-36 pb-54 px-100 relative"
+        className="flex items-center justify-between px-24 relative bg-cover bg-center flex-1"
         style={{
           backgroundImage: "url('/images/banners/the-manh-su-khac-biet.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: "70% auto",
         }}
       >
-        <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-md max-w-3xl z-10">
-          <h1 className="text-2xl font-bold mb-4">Thế mạnh và sự khác biệt</h1>
-          <p className="mb-4 text-justify">
+        <div className="absolute inset-0 bg-white opacity-90"></div>
+        <div className="text-left flex flex-col w-1/2 relative z-10">
+          <h1 className="text-5xl font-bold mb-4 text-black text-left">
+            Thế mạnh và sự khác biệt
+          </h1>
+          <p className="text-xl text-gray-600 mb-6 text-left leading-relaxed">
             Nơi hội tụ của các chuyên gia dày dạn trong lĩnh vực công nghệ thông
             tin, quản trị doanh nghiệp, ERP, kế toán,… sẽ đem lại sản phẩm:
           </p>
-          <ul className="list-inside list-[➤] space-y-2 pl-4">
+          <ul className="list-inside list-[➤] space-y-2 pl-4 text-lg text-gray-700">
             <li>Công nghệ hiện đại</li>
             <li>Tính bảo mật cao</li>
             <li>Tối ưu hiệu năng</li>
@@ -28,6 +30,15 @@ export default function AboutUsPage() {
             <li>Thân thiện</li>
             <li>Giá cả phải chăng</li>
           </ul>
+        </div>
+        <div className="relative w-1/2 rounded-bl-clip">
+          <Image
+            src="/images/banners/the-manh-su-khac-biet.png"
+            alt="Thế mạnh và sự khác biệt"
+            width={600}
+            height={400}
+            className="w-full h-auto object-cover shadow-lg"
+          />
         </div>
       </main>
       <Footer />
