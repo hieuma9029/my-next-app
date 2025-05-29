@@ -44,10 +44,10 @@ export default function Header() {
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-56">
                 <ul className="text-sm text-gray-700">
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#activity-news">Tin hoạt động</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#tech-news">Tin công nghệ</a>
                   </li>
                 </ul>
@@ -59,28 +59,28 @@ export default function Header() {
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-64">
                 <ul className="text-sm text-gray-700">
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#internal">CRM (Hệ thống tương tác khách hàng đa kênh)</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#labor">Hệ thống ERP (Quản trị tổng thể nguồn lực doanh nghiệp</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#education">Phần mềm kế toán (TT88, TT133, TT200)</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#finance">Hệ thống HRM</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#inspection">Hệ thống quản lý ký túc xá</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#internal">Hoá đơn điện tử</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="/bao-gia">Báo giá</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#finance">Hợp đồng điện tử</a>
                   </li>
                 </ul>
@@ -92,10 +92,10 @@ export default function Header() {
               </a>
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-64">
                 <ul className="text-sm text-gray-700">
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#digital-consulting">Tư vấn chuyển đổi số</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#software-maintenance">Dịch vụ bảo trì phần mềm ứng dụng</a>
                   </li>
                 </ul>
