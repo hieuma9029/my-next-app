@@ -3,9 +3,9 @@ import ChatWidget from "../floatingbtn/ChatWidget";
 
 export default function Footer() {
   return (
-    <footer className="container-fluid bg-black text-white py-24 px-67 relative">
+    <footer className="container-fluid bg-black text-white ">
         {/* Contact Information */}
-        <div className="absolute top-[-95px] left-1/2 transform -translate-x-1/2 w-[70%] bg-gray-100 p-12 rounded-4xl shadow-lg flex justify-between gap-4">
+        <div className="w-[100%] bg-gray-100 py-12 px-67 flex justify-between gap-4">
           <div className="flex items-center justify-between bg-white p-5 rounded-lg border border-gray-300 w-full">
             <div className="flex items-center gap-4">
               <div className="bg-blue-500 p-3 rounded-lg icon-container-custom">
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="container-fluid flex justify-between mt-20">
+        <div className="container-fluid flex justify-between py-24 px-67 relative ">
           {/* Company Info */}
           <div className="w-1/3 mx-4">
             <h3 className="text-xl font-bold mb-4 text-blue-400">Diamond Co.</h3>
@@ -68,16 +68,16 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Về chúng tôi</h3>
             <ul className="text-sm text-gray-400">
               <li className="mb-2 hover:text-white">
-                <a href="/AboutUsPage">Về chúng tôi</a>
+                <a href="/ve-chung-toi">Về chúng tôi</a>
               </li>
               <li className="mb-2 hover:text-white">
-                <a href="#">Cơ cấu - Tổ chức</a>
+                <a href="/co-cau-co-quan-to-chuc">Cơ cấu - Tổ chức</a>
               </li>
               <li className="mb-2 hover:text-white">
-                <a href="#">Tầm nhìn - Chiến lược</a>
+                <a href="/tam-nhin-chien-luoc">Tầm nhìn - Chiến lược</a>
               </li>
               <li className="mb-2 hover:text-white">
-                <a href="#">Thế mạnh và sự khác biệt</a>
+                <a href="/the-manh-va-su-khac-biet">Thế mạnh và sự khác biệt</a>
               </li>
             </ul>
           </div>

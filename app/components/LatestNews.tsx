@@ -4,7 +4,7 @@ import React from "react";
 
 export default function LatestNews() {
   return (
-    <div className="container-fluid flex flex-col items-center p-63 bg-gray-100">
+    <div className="container-fluid flex flex-col items-center px-63 py-42 bg-gray-100">
       <h2 className="text-1xl font-bold mb-4 text-green-400">Tin tức</h2>
       <h2 className="text-4xl font-bold mb-6 text-black">Tin tức mới</h2>
       <div className="container-fluid flex gap-8">

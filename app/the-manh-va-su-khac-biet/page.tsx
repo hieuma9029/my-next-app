@@ -7,7 +7,7 @@ export default function AboutUsPage() {
     <div className="min-h-screen flex flex-col relative">
       <Header />
       <main
-        className="flex items-center justify-between px-24 relative bg-cover bg-center flex-1"
+        className="flex items-center justify-between p-24 relative bg-cover bg-center flex-1"
         style={{
           backgroundImage: "url('/images/banners/the-manh-su-khac-biet.png')",
           backgroundSize: "70% auto",
