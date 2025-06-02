@@ -30,7 +30,7 @@ export default function FeaturedProductsSection() {
                 />
                 <div
                   className="absolute bottom-[-12%] left-1/2 transform -translate-x-1/2 bg-white text-black text-center py-4 rounded-lg shadow-md"
-                  style={{ width: "90%" }}
+                  style={{ width: "100%" }}
                 >
                   <p className="text-xl font-medium">{product.name}</p>
                 </div>
