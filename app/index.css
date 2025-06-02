@@ -261,3 +261,44 @@ body {
       z-index: 1001;
 }
 /* end */
+
+/* crm css */
+.app-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.app-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.app-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.app-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.app-item:hover img {
+  transform: scale(1.05);
+}
+/* end */

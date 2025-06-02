@@ -60,7 +60,7 @@ export default function Header() {
               <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-64">
                 <ul className="text-sm text-gray-700">
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                    <a href="#internal">CRM (Hệ thống tương tác khách hàng đa kênh)</a>
+                    <a href="/crm">CRM (Hệ thống tương tác khách hàng đa kênh)</a>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     <a href="#labor">Hệ thống ERP (Quản trị tổng thể nguồn lực doanh nghiệp</a>

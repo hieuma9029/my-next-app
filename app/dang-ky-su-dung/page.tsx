@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import AboutUsSection from "../components/AboutUsSection";
 import Footer from "../components/Footer";
 
 export default function AboutUsPage() {
