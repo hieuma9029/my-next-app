@@ -230,7 +230,6 @@ export default function AboutUsPage() {
                   alt="Bán lẻ & Thương mại điện tử"
                 />
                 <div className="overlay">Bán lẻ & Thương mại điện tử</div>
-                <p>Giải pháp tối ưu cho ngành bán lẻ và thương mại điện tử.</p>
               </div>
               <div className="app-item">
                 <img
@@ -238,9 +237,6 @@ export default function AboutUsPage() {
                   alt="Tài chính – Ngân hàng & Bảo hiểm"
                 />
                 <div className="overlay">Tài chính – Ngân hàng & Bảo hiểm</div>
-                <p>
-                  Hỗ trợ quản lý khách hàng và tối ưu hóa quy trình tài chính.
-                </p>
               </div>
               <div className="app-item">
                 <img
@@ -248,9 +244,6 @@ export default function AboutUsPage() {
                   alt="Sản xuất & Phân phối"
                 />
                 <div className="overlay">Sản xuất & Phân phối</div>
-                <p>
-                  Tăng cường hiệu quả sản xuất và quản lý chuỗi cung ứng.
-                </p>
               </div>
               <div className="app-item">
                 <img
@@ -258,9 +251,6 @@ export default function AboutUsPage() {
                   alt="Dịch vụ – Du lịch – Nhà hàng"
                 />
                 <div className="overlay">Dịch vụ – Du lịch – Nhà hàng</div>
-                <p>
-                  Quản lý khách hàng và tối ưu hóa trải nghiệm dịch vụ.
-                </p>
               </div>
               <div className="app-item">
                 <img
@@ -268,9 +258,6 @@ export default function AboutUsPage() {
                   alt="Bất động sản & Xây dựng"
                 />
                 <div className="overlay">Bất động sản & Xây dựng</div>
-                <p>
-                  Hỗ trợ quản lý dự án và tối ưu hóa quy trình xây dựng.
-                </p>
               </div>
               <div className="app-item">
                 <img
@@ -278,9 +265,6 @@ export default function AboutUsPage() {
                   alt="Giáo dục & Đào tạo"
                 />
                 <div className="overlay">Giáo dục & Đào tạo</div>
-                <p>
-                  Nâng cao hiệu quả quản lý học viên và chương trình đào tạo.
-                </p>
               </div>
             </div>
           </div>
