@@ -1,56 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { features } from "./featuresData";
+import { heroDescription } from "./heroData";
+import { featuresDescription } from "./featuresDescriptionData";
 
 export default function AboutUsPage() {
   const [openFeature, setOpenFeature] = useState<number | null>(null);
+  const featureRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const features = [
-    {
-      img: "https://via.placeholder.com/400x300",
-      alt: "Quản trị hệ thống",
-      title: "Quản trị Hệ thống",
-      desc:
-        "Phân quyền chi tiết, quản lý vai trò, tạo mã tự động và bảo mật tài khoản người dùng.",
-    },
-    {
-      img: "https://via.placeholder.com/400x300",
-      alt: "Quản lý khách hàng",
-      title: "Quản lý Khách hàng",
-      desc:
-        "Danh mục cấu hình, quản lý thông tin khách hàng tập trung, phân loại và lọc nâng cao.",
-    },
-    {
-      img: "https://via.placeholder.com/400x300",
-      alt: "Callcenter & Auto Dialer",
-      title: "Callcenter & Auto Dialer",
-      desc:
-        "Tích hợp tổng đài ảo, chiến dịch quay số tự động, báo cáo chi tiết, tăng hiệu suất cuộc gọi.",
-    },
-    {
-      img: "https://via.placeholder.com/400x300",
-      alt: "Đa kênh",
-      title: "Đa Kênh (Omni-Channel)",
-      desc:
-        "Kết nối Facebook, Zalo, Chat, Email, SMS; kịch bản tự động, rule phân bổ, lịch sử luân chuyển.",
-    },
-    {
-      img: "https://via.placeholder.com/400x300",
-      alt: "Quản trị & Phân tích",
-      title: "Quản trị & Phân tích",
-      desc:
-        "Báo cáo thời gian thực, biểu đồ trực quan, phân tích dữ liệu khách hàng chi tiết.",
-    },
-    {
-      img: "https://via.placeholder.com/400x300",
-      alt: "Bảo mật & Hiệu suất",
-      title: "Bảo mật & Hiệu suất",
-      desc:
-        "Đám mây sẵn sàng cao, mã hoá dữ liệu, sao lưu định kỳ, phân quyền truy cập chặt chẽ.",
-    },
-  ];
+  const scrollToFeature = (idx: number) => {
+    featureRefs.current[idx]?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
 
   return (
     <div className="min-h-screen flex flex-col relative">
@@ -73,30 +39,13 @@ export default function AboutUsPage() {
           <p
             style={{
               fontSize: "1.1rem",
-              marginBottom: 25,
-              maxWidth: 600,
+              maxWidth: 1150,
               marginLeft: "auto",
               marginRight: "auto",
             }}
           >
-            Tối ưu hoá quy trình bán hàng, chăm sóc khách hàng và tăng trưởng bền
-            vững với hệ thống DSS CRM hiện đại, tích hợp đa kênh và tự động hoá.
+            {heroDescription}
           </p>
-          <a
-            className="btn btn-primary hero-cta"
-            href="#contact"
-            style={{
-              display: "inline-block",
-              marginTop: 10,
-              backgroundColor: "#ff9800",
-              color: "#fff",
-              padding: "8px 16px",
-              borderRadius: 4,
-              fontWeight: 500,
-            }}
-          >
-            Yêu cầu Demo
-          </a>
         </section>
 
         {/* Features Section */}
@@ -140,11 +89,10 @@ export default function AboutUsPage() {
                     backgroundColor: "#fff",
                     borderRadius: 8,
                     boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-                    padding: openFeature === idx ? 30 : 20,
+                    padding: 20,
                     textAlign: "center",
                     cursor: "pointer",
                     transition: "all 0.3s ease",
-                    transform: openFeature === idx ? "translateY(-5px)" : "none",
                   }}
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.transform = "translateY(-5px)")
@@ -152,9 +100,7 @@ export default function AboutUsPage() {
                   onMouseLeave={(e) =>
                     (e.currentTarget.style.transform = "none")
                   }
-                  onClick={() =>
-                    setOpenFeature(openFeature === idx ? null : idx)
-                  }
+                  onClick={() => scrollToFeature(idx)}
                 >
                   <img
                     src={feature.img}
@@ -175,15 +121,48 @@ export default function AboutUsPage() {
                   >
                     {feature.title}
                   </h3>
-                  {openFeature === idx && (
-                    <p
-                      style={{
-                        fontSize: "0.95rem",
-                        color: "#555",
-                        marginTop: 10,
-                      }}
-                    >
-                      {feature.desc}
+                </div>
+              ))}
+            </div>
+
+            {/* Features Description Section */}
+            <div
+              className="features-list"
+              style={{
+                marginTop: 50,
+                lineHeight: 1.6,
+                color: "#555",
+              }}
+            >
+              {featuresDescription.map((item, idx) => (
+                <div
+                  key={idx}
+                  ref={(el) => {
+                    featureRefs.current[idx] = el;
+                  }}
+                  style={{ marginBottom: 30 }}
+                >
+                  <h3 style={{ color: "#0d47a1", fontSize: "1.5rem" }}>
+                    {item.title}
+                  </h3>
+                  <p>{item.description}</p>
+                  <ul style={{ paddingLeft: 20 }}>
+                    {item.details.map((detail, detailIdx) => (
+                      <li
+                        key={detailIdx}
+                        style={{
+                          marginBottom: 5,
+                          paddingLeft: detail.startsWith("🔺") ? 20 : 0,
+                          listStyleType: "none",
+                        }}
+                      >
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+                  {item.additionalInfo && (
+                    <p style={{ marginTop: 10, fontStyle: "italic" }}>
+                      {item.additionalInfo}
                     </p>
                   )}
                 </div>

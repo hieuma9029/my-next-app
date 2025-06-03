@@ -1,0 +1,2 @@
+export const heroDescription =
+  "DSS CRM là giải pháp quản lý quan hệ khách hàng toàn diện, được thiết kế nhằm tối ưu hoá quy trình bán hàng, chăm sóc khách hàng và hỗ trợ doanh nghiệp tăng trưởng bền vững. Dựa trên nền tảng công nghệ hiện đại, DSS CRM tích hợp đầy đủ các modul quản trị hệ thống, quản lý khách hàng, ticket, tổng đài và đa kênh, giúp doanh nghiệp tiết kiệm thời gian, nâng cao hiệu suất và đảm bảo dữ liệu luôn chính xác, bảo mật.";
