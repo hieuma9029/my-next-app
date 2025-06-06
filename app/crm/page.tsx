@@ -33,12 +33,15 @@ export default function AboutUsPage() {
             textAlign: "center",
           }}
         >
-          <h1 style={{ fontSize: "2.5rem", marginBottom: 15 }}>
+          <h1
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+            style={{ marginBottom: 15 }}
+          >
             Giải pháp DSS CRM - Quản lý Quan hệ Khách hàng Toàn diện
           </h1>
           <p
+            className="text-base sm:text-lg md:text-xl"
             style={{
-              fontSize: "1.1rem",
               maxWidth: 1150,
               marginLeft: "auto",
               marginRight: "auto",
@@ -62,8 +65,8 @@ export default function AboutUsPage() {
             style={{ maxWidth: 1100, margin: "0 auto" }}
           >
             <h2
+              className="text-xl sm:text-2xl md:text-3xl font-bold"
               style={{
-                fontSize: "2rem",
                 color: "#0d47a1",
                 marginBottom: 20,
                 textAlign: "center",
@@ -72,7 +75,7 @@ export default function AboutUsPage() {
               Tính năng nổi bật
             </h2>
             <div
-              className="features-grid"
+              className="features-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-8"
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
@@ -105,6 +108,7 @@ export default function AboutUsPage() {
                   <img
                     src={feature.img}
                     alt={feature.alt}
+                    className="mx-auto w-full max-w-[120px] h-auto object-cover rounded mb-4"
                     style={{
                       height: 120,
                       objectFit: "cover",
@@ -113,8 +117,8 @@ export default function AboutUsPage() {
                     }}
                   />
                   <h3
+                    className="text-base sm:text-lg font-semibold"
                     style={{
-                      fontSize: "1.2rem",
                       marginBottom: 10,
                       color: "#0d47a1",
                     }}
@@ -127,7 +131,7 @@ export default function AboutUsPage() {
 
             {/* Features Description Section */}
             <div
-              className="features-list"
+              className="features-list mt-12 text-sm sm:text-base"
               style={{
                 marginTop: 50,
                 lineHeight: 1.6,
@@ -140,13 +144,14 @@ export default function AboutUsPage() {
                   ref={(el) => {
                     featureRefs.current[idx] = el;
                   }}
+                  className="mb-8"
                   style={{ marginBottom: 30 }}
                 >
-                  <h3 style={{ color: "#0d47a1", fontSize: "1.5rem" }}>
+                  <h3 className="text-lg sm:text-xl font-bold" style={{ color: "#0d47a1" }}>
                     {item.title}
                   </h3>
                   <p>{item.description}</p>
-                  <ul style={{ paddingLeft: 20 }}>
+                  <ul className="pl-4">
                     {item.details.map((detail, detailIdx) => (
                       <li
                         key={detailIdx}
@@ -185,8 +190,8 @@ export default function AboutUsPage() {
             style={{ maxWidth: 1100, margin: "0 auto" }}
           >
             <h2
+              className="text-xl sm:text-2xl md:text-3xl font-bold"
               style={{
-                fontSize: "2rem",
                 color: "#0d47a1",
                 marginBottom: 20,
                 textAlign: "center",
@@ -195,7 +200,7 @@ export default function AboutUsPage() {
               Các lĩnh vực ứng dụng
             </h2>
             <div
-              className="apps-grid"
+              className="apps-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-8"
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(3, 1fr)",
@@ -203,47 +208,66 @@ export default function AboutUsPage() {
                 marginTop: 30,
               }}
             >
-              <div className="app-item">
+              {/* Responsive app items */}
+              <div className="app-item relative">
                 <img
                   src="https://via.placeholder.com/400x300"
                   alt="Bán lẻ & Thương mại điện tử"
+                  className="w-full h-40 sm:h-52 md:h-60 object-cover rounded"
                 />
-                <div className="overlay">Bán lẻ & Thương mại điện tử</div>
+                <div className="overlay absolute bottom-2 left-2 bg-white bg-opacity-80 px-2 py-1 rounded text-xs sm:text-sm font-semibold">
+                  Bán lẻ & Thương mại điện tử
+                </div>
               </div>
-              <div className="app-item">
+              <div className="app-item relative">
                 <img
                   src="https://via.placeholder.com/400x300"
                   alt="Tài chính – Ngân hàng & Bảo hiểm"
+                  className="w-full h-40 sm:h-52 md:h-60 object-cover rounded"
                 />
-                <div className="overlay">Tài chính – Ngân hàng & Bảo hiểm</div>
+                <div className="overlay absolute bottom-2 left-2 bg-white bg-opacity-80 px-2 py-1 rounded text-xs sm:text-sm font-semibold">
+                  Tài chính – Ngân hàng & Bảo hiểm
+                </div>
               </div>
-              <div className="app-item">
+              <div className="app-item relative">
                 <img
                   src="https://via.placeholder.com/400x300"
                   alt="Sản xuất & Phân phối"
+                  className="w-full h-40 sm:h-52 md:h-60 object-cover rounded"
                 />
-                <div className="overlay">Sản xuất & Phân phối</div>
+                <div className="overlay absolute bottom-2 left-2 bg-white bg-opacity-80 px-2 py-1 rounded text-xs sm:text-sm font-semibold">
+                  Sản xuất & Phân phối
+                </div>
               </div>
-              <div className="app-item">
+              <div className="app-item relative">
                 <img
                   src="https://via.placeholder.com/400x300"
                   alt="Dịch vụ – Du lịch – Nhà hàng"
+                  className="w-full h-40 sm:h-52 md:h-60 object-cover rounded"
                 />
-                <div className="overlay">Dịch vụ – Du lịch – Nhà hàng</div>
+                <div className="overlay absolute bottom-2 left-2 bg-white bg-opacity-80 px-2 py-1 rounded text-xs sm:text-sm font-semibold">
+                  Dịch vụ – Du lịch – Nhà hàng
+                </div>
               </div>
-              <div className="app-item">
+              <div className="app-item relative">
                 <img
                   src="https://via.placeholder.com/400x300"
                   alt="Bất động sản & Xây dựng"
+                  className="w-full h-40 sm:h-52 md:h-60 object-cover rounded"
                 />
-                <div className="overlay">Bất động sản & Xây dựng</div>
+                <div className="overlay absolute bottom-2 left-2 bg-white bg-opacity-80 px-2 py-1 rounded text-xs sm:text-sm font-semibold">
+                  Bất động sản & Xây dựng
+                </div>
               </div>
-              <div className="app-item">
+              <div className="app-item relative">
                 <img
                   src="https://via.placeholder.com/400x300"
                   alt="Giáo dục & Đào tạo"
+                  className="w-full h-40 sm:h-52 md:h-60 object-cover rounded"
                 />
-                <div className="overlay">Giáo dục & Đào tạo</div>
+                <div className="overlay absolute bottom-2 left-2 bg-white bg-opacity-80 px-2 py-1 rounded text-xs sm:text-sm font-semibold">
+                  Giáo dục & Đào tạo
+                </div>
               </div>
             </div>
           </div>

@@ -40,16 +40,20 @@ export default function CustomerReviews() {
 
   return (
     <div className="flex flex-col items-center pt-36 px-2 md:px-6 lg:px-12">
-      <h2 className="text-1xl font-bold mb-4 text-green-400">Khách hàng nói gì về chúng tôi</h2>
-      <h2 className="text-4xl font-bold mb-12 text-black">Nhận xét và đánh giá của khách hàng</h2>
+      <h2 className="text-base md:text-1xl font-bold mb-4 text-green-400 text-center md:text-left">
+        Khách hàng nói gì về chúng tôi
+      </h2>
+      <h2 className="text-2xl md:text-4xl font-bold mb-12 text-black text-center md:text-left">
+        Nhận xét và đánh giá của khách hàng
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
         {reviews.map((review, idx) => (
           <div
             key={idx}
-            className="flex flex-col p-8 rounded-lg min-h-[260px] relative"
+            className="flex flex-col p-8 rounded-lg min-h-[260px] relative text-center md:text-left"
           >
-            <div className="flex items-center justify-between mb-3">
-              <div>
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-between mb-3">
+              <div className="w-full">
                 <h3 className="text-xl font-bold text-black mb-1">{review.name}</h3>
                 <div className="text-blue-700 font-semibold">{review.title}</div>
               </div>

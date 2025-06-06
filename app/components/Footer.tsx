@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="container-fluid bg-black text-white ">
         {/* Contact Information */}
-        <div className="w-[100%] bg-gray-100 py-12 px-67 flex justify-between gap-4">
-          <div className="flex items-center justify-between bg-white p-5 rounded-lg border border-gray-300 w-full">
+        <div className="w-full bg-gray-100 py-8 px-4 md:px-16 flex flex-col md:flex-row justify-between gap-4">
+          <div className="flex items-center justify-between bg-white p-5 rounded-lg border border-gray-300 w-full mb-4 md:mb-0">
             <div className="flex items-center gap-4">
               <div className="bg-blue-500 p-3 rounded-lg icon-container-custom">
                 <PhoneOutlined className="text-blue-500 text-xl" />
@@ -17,7 +17,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-between bg-white p-5 rounded-lg border border-gray-300 w-full">
+          <div className="flex items-center justify-between bg-white p-5 rounded-lg border border-gray-300 w-full mb-4 md:mb-0">
             <div className="flex items-center gap-4">
               <div className="bg-blue-500 p-3 rounded-lg icon-container-custom">
                 <MailOutlined className="text-blue-500 text-xl" />
@@ -41,9 +41,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="container-fluid flex justify-between py-24 px-67 relative ">
+        <div className="container-fluid flex flex-col md:flex-row justify-between py-12 px-4 md:px-16 relative">
           {/* Company Info */}
-          <div className="w-1/3 mx-4">
+          <div className="w-full md:w-1/3 mx-0 md:mx-4 mb-8 md:mb-0">
             <h3 className="text-xl font-bold mb-4 text-blue-400">Diamond Co.</h3>
             <p className="text-sm text-gray-400 mb-6">
               Văn hóa và nguồn nhân lực chính là điểm mấu chốt của sự phát triển và thành công của DIAMOND SOFTWARE. Công ty DIAMOND SOFTWARE đánh giá cao tính trung thực, sáng tạo và tinh thần tương trợ, tôn trọng đồng nghiệp cũng như khách hàng.
@@ -64,7 +64,7 @@ export default function Footer() {
             </div>
           </div>
           {/* About Us */}
-          <div className="w-1/6 mx-4">
+          <div className="w-full md:w-1/6 mx-0 md:mx-4 mb-8 md:mb-0">
             <h3 className="text-xl font-bold mb-4">Về chúng tôi</h3>
             <ul className="text-sm text-gray-400">
               <li className="mb-2 hover:text-white">
@@ -82,7 +82,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* Quick Access */}
-          <div className="w-1/6 mx-4">
+          <div className="w-full md:w-1/6 mx-0 md:mx-4 mb-8 md:mb-0">
             <h3 className="text-xl font-bold mb-4">Truy cập nhanh</h3>
             <ul className="text-sm text-gray-400">
               <li className="mb-2 hover:text-white">
@@ -97,15 +97,15 @@ export default function Footer() {
             </ul>
           </div>
           {/* Newsletter */}
-          <div className="w-1/3 mx-4">
+          <div className="w-full md:w-1/3 mx-0 md:mx-4">
             <h3 className="text-xl font-bold mb-4">Đăng ký tư vấn</h3>
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row">
               <input
                 type="email"
                 placeholder="Email của bạn"
-                className="w-full p-4 rounded-l-lg bg-gray-800 text-gray-400 focus:outline-none"
+                className="w-full p-4 rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none bg-gray-800 text-gray-400 focus:outline-none"
               />
-              <button className="bg-blue-500 p-4 rounded-r-lg hover:bg-blue-600 flex items-center justify-center">
+              <button className="bg-blue-500 p-4 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none hover:bg-blue-600 flex items-center justify-center">
                 <SendOutlined className="text-white" />
               </button>
             </div>
